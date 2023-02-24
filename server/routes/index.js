@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/test/post',(req,res)=>{
-  res.status(200).status({msg : 'good post'})
+  res.status(200).json({msg : 'good post'})
 })
 
 module.exports = router;
